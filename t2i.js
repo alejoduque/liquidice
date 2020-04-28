@@ -98,11 +98,11 @@ bot.on('message', (msg) => {
                 download(fileUrl).then(data => {
                     fs.writeFileSync(darStringArchivo(carpeta, ext), data);
                     if(carpeta == 'audio' && msg.voice.file_size < 57000){
-                        pendientes.push('./' + darStringArchivo(carpeta, ext));
+                        pendientes.push('audio/off/' + darStringArchivo(carpeta, ext));
                         if(!sonando){
-                            reproducirStream();
+//                            reproducirStream();
                         }
-                        bot.sendMessage(chatId, 'se fue al streaming en vivo');
+                        bot.sendMessage(chatId, 'se fue al directorio audio');
                     }
                     obj.file = darStringArchivo(carpeta, ext);
                     parsedjson.push(obj);
