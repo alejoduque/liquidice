@@ -1,4 +1,3 @@
-=======
 <img src="https://raw.githubusercontent.com/estacionckweb/Telegram2Icecast/master/t2i_logo_sml_fondoblanco.jpg" /> <br>
 
 
