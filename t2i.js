@@ -97,12 +97,21 @@ bot.on('message', (msg) => {
                 var fileUrl = urlFile + data.result.file_path;
                 download(fileUrl).then(data => {
                     fs.writeFileSync(darStringArchivo(carpeta, ext), data);
+<<<<<<< HEAD
+                    if(carpeta == 'audio' || carpeta == 'video'){
+//                        var play = spawn('cvlc', ['--no-video', './' + darStringArchivo(carpeta, ext)]);
+=======
                     if(carpeta == 'audio' && msg.voice.file_size < 57000){
                         pendientes.push('audio/off/' + darStringArchivo(carpeta, ext));
                         if(!sonando){
 //                            reproducirStream();
                         }
+<<<<<<< HEAD
                         bot.sendMessage(chatId, 'se fue al directorio audio');
+=======
+>>>>>>> 1851462a661e182422d5473f72c172ff5211496d
+                        bot.sendMessage(chatId, 'se fue al streaming en vivo');
+>>>>>>> d0d47439e40e9590357cfdfd19be3997d121e731
                     }
                     obj.file = darStringArchivo(carpeta, ext);
                     parsedjson.push(obj);
