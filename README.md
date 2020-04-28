@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 =======
 <img src="https://raw.githubusercontent.com/estacionckweb/Telegram2Icecast/master/t2i_logo_sml_fondoblanco.jpg" /> <br>
 
@@ -39,4 +38,3 @@ Con las dependencias instaladas ya se puede correr el script con:
 ```bash
 node t2i.js
 ```
->>>>>>> d0d47439e40e9590357cfdfd19be3997d121e731
